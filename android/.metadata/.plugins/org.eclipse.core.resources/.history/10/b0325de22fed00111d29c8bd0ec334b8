@@ -109,4 +109,56 @@ public class MailChimpAPI extends Plugin {
 			message = "Signup failed: " + e.getMessage();
 		}
 	}
+	
+//	private void addSingleToList(JSONArray data, ListMethods listMethods, String listId) throws JSONException {
+//    	
+//		String message = "Signup successful!";
+//		
+//		try {
+//			JSONObject obj = data.getJSONObject(0);
+//			MergeFieldListUtil merge = new MergeFieldListUtil();
+//
+//			String emailAddress = obj.getString("emailAddress");
+//			merge.addField("FNAME", obj.getString("firstName"));
+//			merge.addField("LNAME", obj.getString("lastName"));
+//			//String type = obj.getString("type");
+//			
+//			listMethods.listSubscribe(listId, emailAddress, merge);
+//			
+//		} catch (JSONException e) {
+//			throw e;
+//		}
+//		catch (MailChimpApiException e) {
+//			Log.e("MailChimp", "Exception subscribing person: " + e.getMessage());
+//			message = "Signup failed: " + e.getMessage();
+//		}
+//    }
+	
+//	private void addBatchToList(JSONArray data, ListMethods listMethods, String listId) throws JSONException{
+//		
+//		ArrayList<MergeFieldListUtil> fields = new ArrayList<MergeFieldListUtil>(data.length());
+//		String message = "Signup successful!";
+//		
+//		try {
+//			for (int i = 0; i < data.length(); i++) {
+//				JSONObject obj = data.getJSONObject(i);
+//				MergeFieldListUtil merges = new MergeFieldListUtil();
+//
+//				merges.addEmail(obj.getString("emailAddress"));
+//				merges.addField("FNAME", obj.getString("firstName"));
+//				merges.addField("LNAME", obj.getString("lastName"));
+//				fields.add(merges);
+//			}
+//		
+//			BatchResults results = listMethods.listBatchSubscribe(listId, fields);
+//		
+//		} catch (JSONException e) {
+//			throw e;
+//		}
+//		catch (MailChimpApiException e) {
+//			Log.e("MailChimp", "Exception batch subscribing: " + e.getMessage());
+//			message = "Signup failed: " + e.getMessage();
+//		}
+//	}
+	
 }

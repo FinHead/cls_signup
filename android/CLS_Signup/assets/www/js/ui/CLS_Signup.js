@@ -18,10 +18,6 @@ function onBodyLoad(){
 			subscribeToList(subscribers);
 		});
 	});
-	// $("#delete").bind ("click", function ()
-	//	{
-	//		deleteSubscribers();
-	//	});
 	$(document).ready(function() {
 		$('.exit-dialog-yes').live('click',function() {
 			navigator.app.exitApp();
@@ -76,10 +72,6 @@ function selectMCOptions(callback){
 					mc_api_key:rowsArray[i].API_KEY,
 					mc_list_id:rowsArray[i].LIST_ID
 				};
-				// //each row in the rowsArray represents a row retrieved from the database
-				// var apiKey = rowsArray[i].API_KEY;
-				// var listId = rowsArray[i].LIST_ID;
-				//console.log("Retrieved MC_OPTIONS: "+apiKey+"  "+listId);
 			}
 			return callback(result);
 		},
@@ -189,19 +181,6 @@ function deleteSubscribers(){
 
 function subscribeToList(data){
 	console.log("subscribeToList");
-	
-	//var data = [{emailAddress: 'jskotz@gmail.com'}];
-	
-	// var data = [{emailAddress: $('#emailAddress').val(), 
-	//				firstName: $('#firstName').val(),
-	//				lastName: $('#lastName').val(),
-	//				type: $('#type').val()},
-	//				{emailAddress: 'jskotz@gmail.com', 
-	//				firstName: $('#firstName').val(),
-	//				lastName: $('#lastName').val(),
-	//				type: $('#type').val()}];
-	
-	//var options = {mc_api_key: "ff29bd63419727b044cb450e44c52ae7-us4", mc_list_id:"ed0081b975"};
 	
 	selectMCOptions(function(options){
 		console.log (JSON.stringify (options, null, '  '));
