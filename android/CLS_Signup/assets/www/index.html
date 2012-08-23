@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link type="text/css" rel="stylesheet" href="js/plugins/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script type="text/javascript" charset="utf-8" src="js/plugins/cordova-2.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/jquery.mobile-1.1.1/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/db/html5sql.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/ui/CLS_Signup.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/MailChimpApiPlugin.js"></script>
+	
+	<style media="screen" type="text/css">
+
+	#navgroup {text-align:center;}
+	#navgroup div {display:inline-block;}
+
+	</style>
+	
+	<!-- <script type="text/javascript">
+	  $(document).ready(function() {
+	    $('.exit-dialog-yes').live('click',function() {
+			navigator.app.exitApp();
+	    });
+		$('.delete-dialog-yes').live('click',function() {
+			navigator.app.exitApp();
+	    });
+	  }; 
+	</script> -->
+</head> 
+<body onload="onBodyLoad()"> 
+
+<div data-role="page" id="HOME">
+
+	<div data-role="header">
+		<a href="#OPTIONS" data-icon="gear" class="ui-btn-right">Options</a>
+		<span class="ui-title" />
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<form action="#" method="get">
+			<div> 
+				<table style="width:100%;background-color:#CECECE">
+					<td>
+						<img src="images/CherryLaurelHeaderLogo.png" alt="Cherry Laurel Studio" width="151" height="114" />
+					</td>
+					<td>
+						<p style="text-align:left;color:#7b7b7b;font-size:30px;font-family:Droid Sans;">Email Signup</p>
+					</td>
+				</table>
+			</div>
+			<br><br>
+			<div data-role="fieldcontain">
+	    		<label for="emailAddress">Email Address:</label>
+	    		<input type="email" name="emailAddress" id="emailAddress" value=""  />
+			</div>	
+			<div data-role="fieldcontain">
+	    		<label for="firstName">First Name:</label>
+	    		<input type="text" name="firstName" id="firstName" value=""  />
+			</div>	
+			<div data-role="fieldcontain">
+	    		<label for="lastName">Last Name:</label>
+	    		<input type="text" name="lastName" id="lastName" value=""  />
+			</div>	
+			<!-- <div data-role="fieldcontain">
+					    <fieldset data-role="controlgroup" data-type="horizontal">
+					     	<legend>Email type:</legend>
+					         	<input type="radio" name="radio-choice-type" id="radio-choice-a" value="HTML" checked="checked" />
+					         	<label for="radio-choice-a">HTML</label>
+					         	<input type="radio" name="radio-choice-type" id="radio-choice-b" value="Text" />
+					         	<label for="radio-choice-b">Text</label>
+					         	<input type="radio" name="radio-choice-type" id="radio-choice-c" value="Mobile" />
+					         	<label for="radio-choice-c">Mobile</label>
+					    </fieldset>
+					</div> -->
+			<!-- <div class="ui-body ui-body-b" align="right">
+				<fieldset class="ui-grid-a">
+					<div class="ui-block-a">
+						<a id="clear" href='#' data-role='button' data-inline="true" data-theme="d">Clear </a>
+					<a id="save" href='#' data-role='button' data-inline="true" data-theme="a">Submit</a>
+					</div> -->
+					<!-- 					<div class="ui-block-b"></div> -->
+						<!-- <a id='lnkDialog' href="okDialog.html" data-rel="dialog" data-transition="pop" style='display:none;'></a>
+	    		</fieldset>
+			</div> -->
+			
+			<div class="ui-body ui-body-b" id="navgroup">
+				<!-- <div data-role="controlgroup" data-type="horizontal"> -->
+				<a href="#" id="clear" data-role="button" data-inline="true" data-theme="d">Clear</a>
+				<a href="#" id="save" data-role="button" data-inline="true" data-theme="a">Submit</a>
+				<a id='lnkDialog' href="okDialog.html" data-rel="dialog" data-transition="pop" style='display:none;'></a>
+			</div>
+			
+			<!-- <div id="navgroup">
+					    <div data-role="controlgroup" data-type="horizontal">
+					      <a href="#" data-role="button" data-theme="e" data-mini="true" class="active menu">Menu</a>
+					      <a href="#" data-role="button" data-theme="e" data-mini="true" class="specials">Specials</a>
+					      <a href="#" data-role="button" data-theme="e" data-mini="true" class="howitworks">FAQ</a>
+					      <a href="#" data-rel="external" data-role="button" data-theme="e" data-mini="true"  class="feedback">Facebook</a>
+					</div> -->
+		</form>
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="OPTIONS">
+	<div data-role="header">
+		<a href="#HOME" data-icon="gear" class="ui-btn-right">Home</a>
+		<span class="ui-title" />
+	</div><!-- /header -->
+    <div data-role="content">    
+		<br><br>
+		<a href="#" id="submit" data-role="button" data-theme="d">Submit subscribers to MailChimp</a>
+		<br><br>
+		<a href="deleteDialog.html" data-role="button" data-theme="d" data-rel="dialog" data-transition="flip">Delete all subscribers from local storage</a>
+		<br><br>
+		<a href="exitDialog.html" data-role="button" data-theme="d" data-rel="dialog" data-transition="flip">Exit</a>
+		<br><br>
+    </div><!-- /content -->
+    <div data-role="footer">
+        <h6>Cherry Laurel Studio Email Signup App by Space Karst</h6>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

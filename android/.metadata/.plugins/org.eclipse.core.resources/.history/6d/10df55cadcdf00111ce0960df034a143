@@ -1,0 +1,14 @@
+<resources>
+
+   <string name="app_name">MailChimp Signup</string>
+
+	<!--  SETTINGS FOR ACCESSING YOUR ACCOUNT -->
+	<string name="mc_api_key">ff29bd63419727b044cb450e44c52ae7-us4</string>
+	<string name="mc_list_id">LIST_ID_HERE</string>
+
+	<!--  DISPLAY SETTINGS FOR HOW THE APPLICATION LOOKS -->
+	<string name="mc_dialog_title">Subscribe!</string>
+    <string name="mc_dialog_uploading_title">Uploading to MailChimp</string>
+    <string name="mc_dialog_uploading_desc">Adding e-mail to MailChimp</string>
+
+</resources>

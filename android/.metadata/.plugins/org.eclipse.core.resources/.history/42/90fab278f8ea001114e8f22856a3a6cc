@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">CLS_Signup</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+	<!--  SETTINGS FOR ACCESSING YOUR ACCOUNT -->
+	<string name="mc_api_key">ff29bd63419727b044cb450e44c52ae7-us4</string>
+	<string name="mc_list_id">ed0081b975</string>
+
+</resources>

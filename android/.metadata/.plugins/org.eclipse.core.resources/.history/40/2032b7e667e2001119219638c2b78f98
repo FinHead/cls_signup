@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link type="text/css" rel="stylesheet" href="js/plugins/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script type="text/javascript" charset="utf-8" src="js/plugins/cordova-2.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/jquery.mobile-1.1.1/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<a href="index.html" data-icon="gear" class="ui-btn-right">Options</a>
+		<span class="ui-title" />
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div class="content-primary">
+		<form action="#" method="get">
+			<ul data-role="listview">
+				<li><a href="http://cherrylaurelstudio.com"><img src="images/CherryLaurelHeaderLogo.png" alt="Cherry Laurel Studio" <span class="ui-li-count">4</span></a></li>
+			</ul>
+		
+			<div data-role="fieldcontain">
+	    		<label for="name">Email Address:</label>
+	    		<input type="email" name="emailAddress" id="emailAddress" value=""  />
+			</div>	
+			<div data-role="fieldcontain">
+	    		<label for="name">First Name:</label>
+	    		<input type="text" name="firstName" id="firstName" value=""  />
+			</div>	
+			<div data-role="fieldcontain">
+	    		<label for="name">Last Name:</label>
+	    		<input type="text" name="lastName" id="lastName" value=""  />
+			</div>	
+			<div data-role="fieldcontain">
+			    <fieldset data-role="controlgroup" data-type="horizontal">
+			     	<legend>Email type:</legend>
+			         	<input type="radio" name="radio-choice-b" id="radio-choice-c" value="on" checked="checked" />
+			         	<label for="radio-choice-c">HTML</label>
+			         	<input type="radio" name="radio-choice-b" id="radio-choice-d" value="off" />
+			         	<label for="radio-choice-d">Text</label>
+			         	<input type="radio" name="radio-choice-b" id="radio-choice-e" value="other" />
+			         	<label for="radio-choice-e">Mobile</label>
+			    </fieldset>
+			</div>
+			<div class="ui-body ui-body-b">
+				<fieldset class="ui-grid-a">
+					<div class="ui-block-a"><button type="submit" data-theme="d">Clear</button></div>
+					<div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>
+	    		</fieldset>
+			</div>
+		</form>
+		</div><!--/content-primary -->	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>

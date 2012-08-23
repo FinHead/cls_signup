@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link type="text/css" rel="stylesheet" href="js/plugins/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script type="text/javascript" charset="utf-8" src="js/plugins/cordova-2.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/jquery.mobile-1.1.1/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/plugins/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<a href="index.html" data-icon="gear" class="ui-btn-right">Options</a>
+		<span class="ui-title" />
+	</div><!-- /header -->
+
+	<div data-role="content">	
+			<table bgcolor="#a1a1a1">
+			<tr>
+				<td>
+					<div class="inside clearfix">					
+						<div id="logo">			
+							<h1 class="logo"><a href="http://cherrylaurelstudio.com"><img src="images/CherryLaurelHeaderLogo.png" alt="Cherry Laurel Studio" /></a></h1>
+						</div>
+					</div>
+				</td>
+			
+			</tr>
+			</table>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>

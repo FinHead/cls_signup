@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Cherry Laurel Studio Email Signup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" href="js/plugins/jquery.mobile-1.2.0-alpha.1.min.css" />
+<script type="text/javascript" charset="utf-8" src="js/plugins/cordova-2.0.0.js"></script>
+<script src="js/plugins/jquery-1.7.2.min.js"></script>
+<script src="js/plugins/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+
+<!-- <script type="text/javascript" charset="utf-8" src="js/plugins/jquery.js"></script> -->
+<script type="text/javascript" charset="utf-8" src="MailChimpAPI.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/plugins/MailChimpApiPlugin.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/plugins/pgsqlite_plugin.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/db/StorageHelper.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/db/Table.js"></script>
+
+</head>
+<body>
+<div data-role="page">
+	<div data-role="header">
+		<div data-role="header">
+			<a href="index.html" data-icon="gear" class="ui-btn-right">Options</a>
+	</div><!-- /header -->
+	
+	<div data-role="content">	
+		<div id="clsheader">
+			<table bgcolor="#a1a1a1">
+			<tr>
+				<td>
+					<div class="inside clearfix">					
+						<div id="logo">			
+							<h1 class="logo"><a href="http://cherrylaurelstudio.com"><img src="images/CherryLaurelHeaderLogo.png" alt="Cherry Laurel Studio" /></a></h1>
+						</div>
+					</div>
+				</td>
+				<td>
+					<STYLE>H3 {COLOR: #7b7b7b}</STYLE>
+					<h3 ALIGN="CENTER">Email Signup</h3>
+				</td>
+			</tr>
+			</table>
+		</div><!-- /clsheader -->
+
+<div class="tablecontainer">
+	<table class="datatable" id="ziptable">
+    	<tbody>
+        	<tr>
+				<th>Email Address</th>
+            	<td><input id="emailAddress" maxlength="30" value="jskotz"/></td>
+            </tr>
+        	<tr>
+				<th>First Name</th>
+            	<td><input id="firstName" maxlength="30" value="Jason"/></td>
+             </tr>
+        	<tr>
+				<th>Last Name</th>
+            	<td><input id="lastName" maxlength="30" value="Kotz"/></td>
+            </tr>
+			<tr>
+				<input type="radio" name="type" value="html" checked="true" /> HTML
+				<input type="radio" name="type" value="text" /> Text
+				<input type="radio" name="type" value="mobile" /> Mobile
+			</tr>
+    	</tbody>
+	</table>
+</div>
+
+<div data-inline="false">
+	<button value="Click to Send" id="btnSend" onclick=subscribeToList() autofocus="autofocus" formtarget="_parent">Subscribe to list</button>
+</div>
+
+		</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
+	<script type="text/javascript" charset="utf-8" src="js/plugins/cordova-2.0.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<a href="index.html" data-icon="images/19-gear" class="ui-btn-right">Options</a>
+		<span class="ui-title" />
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Hello world</p>		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
